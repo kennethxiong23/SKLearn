@@ -14,7 +14,12 @@ estimator = sklearn.cluster.KMeans(
     n_clusters = 10,
     n_init = 10,
 )
-estimator.fit(sklearn.preprocessing.scale(digitsX))
+
+# print(digitsX)
+scaledData = sklearn.preprocessing.scale(digitsX)
+# print(scaledData)
+# estimator.fit(scaledData)
+estimator.fit(digitsX)
 predY = estimator.predict(digitsX)
 
 finalPreds = [0 for i in range(10)]
