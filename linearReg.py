@@ -5,6 +5,7 @@ import sklearn.datasets
 import sklearn.preprocessing
 import sklearn.model_selection
 import sklearn.metrics
+import writeDataset
 
 digits = sklearn.datasets.load_digits()
 digitsX = digits.images
